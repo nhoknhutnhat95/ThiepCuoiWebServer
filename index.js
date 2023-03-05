@@ -18,21 +18,21 @@ app.get('/dung-long-wedding', (req, res, next) => {
 app.get('/template1', (req, res, next) => {
     res.render('template1')
 })
-app.get('/hoang-huyen-wedding/home', (req, res, next) => {
+app.get('/hoang-huyen-wedding', (req, res, next) => {
     res.render('HoangHuyen/index')
 })
-app.get('/hoang-huyen-wedding/story', (req, res, next) => {
-    res.render('HoangHuyen/about')
-})
-app.get('/hoang-huyen-wedding/services', (req, res, next) => {
-    res.render('HoangHuyen/services')
-})
-app.get('/hoang-huyen-wedding/gallery', (req, res, next) => {
-    res.render('HoangHuyen/gallery')
-})
-app.get('/hoang-huyen-wedding/contact', (req, res, next) => {
-    res.render('HoangHuyen/contact')
-})
+// app.get('/hoang-huyen-wedding/story', (req, res, next) => {
+//     res.render('HoangHuyen/about')
+// })
+// app.get('/hoang-huyen-wedding/services', (req, res, next) => {
+//     res.render('HoangHuyen/services')
+// })
+// app.get('/hoang-huyen-wedding/gallery', (req, res, next) => {
+//     res.render('HoangHuyen/gallery')
+// })
+// app.get('/hoang-huyen-wedding/contact', (req, res, next) => {
+//     res.render('HoangHuyen/contact')
+// })
 
 //Server
 const port = 5000
