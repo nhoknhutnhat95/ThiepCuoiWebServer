@@ -8,10 +8,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Init router
-
-app.get('/', (req, res, next) => {
-    res.render('index');
-});
+app.use('/', require('./Routers/index.router'))
 app.get('/dung-long-wedding', (req, res, next) => {
     res.render('DungLongWedding')
 })
@@ -42,6 +39,9 @@ app.get('/hoang-huyen-wedding/qrcode', (req, res, next) => {
 app.get('/hoang-huyen-wedding/video', (req, res, next) => {
     res.render('HoangHuyen/video')
 })
+
+
+
 
 //Server
 const port = 5000

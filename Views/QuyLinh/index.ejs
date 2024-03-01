@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hoàng & Huyền</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta property="og:image" content="" />
+    <meta content="Happy Wedding" name="keywords">
+    <meta content="Happy Ending" name="description">
+    <!-- Favicon -->
+    <link href="/QuyLinh/favicon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="/QuyLinh/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/QuyLinh/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/QuyLinh/css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <div id="preloader">
+        <img src="/QuyLinh/img/giphy.gif" class="hover" onclick="myfunction()" style="position: absolute;">
+        <div class="preloader pulse hover" onclick="myfunction()">
+            <i class="fa fa-heartbeat" aria-hidden="true"></i>
+        </div>
+    </div><!-- end loader -->
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="#" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2">Quý <span class="text-primary">&</span> Linh</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Trang chủ</a>
+                <a href="#about" class="nav-item nav-link">Về chúng tôi</a>
+            </div>
+            <a href="#" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">Quý <span class="text-primary">&</span> Linh</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <!-- <a href="#story" class="nav-item nav-link">Story</a>
+
+                <a href="#gallery" class="nav-item nav-link">Gallery</a> -->
+                <a href="#event" class="nav-item nav-link">Sự kiện</a>
+                <a href="#rsvp" class="nav-item nav-link">Bản đồ</a>
+            </div>
+        </div>
+    </nav>
+    <video id="myVideo" width="320" loop height="176" style="opacity: 0;position: fixed; ;">
+        <source src="/QuyLinh/img/music.ogg" type="audio/ogg">
+        <source src="/QuyLinh/img/music.mp3" type="audio/mpeg">
+    </video>
+    <!-- Navbar End -->
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="/QuyLinh/img/IMG_6406.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Quý & Linh</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0"
+                                    style="letter-spacing: 2px;">đám cưới</h3>
+                            </div>
+                            <!--   <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                                <span></span>
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+                <!--   <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Hoàng & Huyền</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
+                            </div>
+                       
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/gallery.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Hoàng & Huyền</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
+                            </div>
+                       
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+                <!--  <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-prev-icon mt-3"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-next-icon mt-3"></span>
+                </div>
+            </a> -->
+            </div>
+        </div>
+        <!-- Carousel End -->
+        <!-- Video Modal Start -->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Modal End -->
+        <!-- About Start -->
+        <div class="container-fluid py-5" id="about">
+            <div class="container py-5">
+                <div class="section-title position-relative text-center">
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Về chúng tôi</h6>
+                    <h1 class="font-secondary display-4">Chú rể & Cô dâu</h1>
+                    <i class="far fa-heart text-dark"></i>
+                </div>
+                <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+                    <div class="col-md-6 p-0 text-center text-md-right" data-aos="fade-up">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                            <h3 class="mb-3">Chú rể</h3>
+                            <h3 class="font-secondary font-weight-normal text-muted mb-3"><i
+                                    class="fa fa-male text-primary pr-3"></i>Nguyễn Hữu Quý</h3>
+                            <!-- <p>Sinh: 1998</p> -->
+                            <p>Bố: Nguyễn Văn Cốc</p>
+                            <p>Mẹ: Nguyễn Thị Thanh hoa</p>
+                            <div class="position-relative">
+                                <!-- <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a> -->
+                                <a class="btn btn-outline-primary btn-square mr-1"
+                                    href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <!-- <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                                <!-- <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-0" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100" src="/QuyLinh/img/IMG_6420.jpg"
+                            style="object-fit: cover; object-position: center;">
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-md-6 p-0" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100" src="/QuyLinh/img/IMG_6418.jpg"
+                            style="object-fit: cover; object-position: top;">
+                    </div>
+                    <div class="col-md-6 p-0 text-center text-md-left" data-aos="fade-up">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                            <h3 class="mb-3">Cô dâu</h3>
+                            <h3 class="font-secondary font-weight-normal text-muted mb-3"><i
+                                    class="fa fa-female text-primary pr-3"></i>Ngô Khánh Linh</h3>
+                            <!-- <p>Sinh: 1998</p> -->
+                            <p>Bố: Ngô Quốc Vững</p>
+                            <p>Mẹ: Phạm Thị Thanh Thủy</p>
+                            <div class="position-relative">
+                                <!-- <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-instagram"></i></a> -->
+                                <a class="btn btn-outline-primary btn-square mr-1"
+                                    href=""><i class="fab fa-facebook-f"></i></a>
+                                <!-- <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                                <!-- <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        <!-- Event Start -->
+        <div class="container-fluid py-5" id="event">
+            <div class="container py-5">
+                <div class="section-title position-relative text-center" data-aos="fade-down">
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Sự kiện</h6>
+                    <h1 class="font-secondary display-4">Tiệc cưới của chúng tôi</h1>
+                    <i class="far fa-heart text-dark"></i>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h5 class="font-weight-normal text-muted mb-3 pb-3" style="color: black" data-aos="fade-down">
+                            Trân trọng kính mời quý vị đến dự buổi tiệc chung vui cùng gia đình tại</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 border-right border-primary" data-aos="fade-right">
+                        <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                            <h4 class="mb-3">Lễ thành hôn</h4>
+                            <h5 class="mb-2">NHÀ HÀNG SAN SAN - Đường Lê Thái Tổ,<br> Võ Cường, Bắc Ninh</h5>
+                            <h5 class="mb-2">Vào hồi 16 giờ 30 phút, Thứ 7 <br> Ngày 23 tháng 3 năm 2024</h5>
+                            <!-- <img class="img-fluid mb-4" src="img/hv.jpg" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center text-md-left ml-md-3" data-aos="fade-left">
+                            <h4 class="mb-3">Lễ Vu Quy</h4>
+                            <h5 class="mb-2">Tư gia nhà gái - 39 Nguyễn Văn Cừ,<br>Ninh Xá, Bắc Ninh</h5>
+                            <h5 class="mb-2">Vào hồi 7 giờ 00 phút, Chủ nhật <br> Ngày 24 tháng 3 năm 2024</h5>
+                            <!-- <img class="img-fluid mb-4" src="img/hu.jpg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center mt-3">
+                    <div class="col-auto">
+                        <button id="join-me">TÔI THAM DỰ</button>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-12 text-center" data-aos="fade-up">
+                        <h5 class="font-weight-normal text-muted pt-3">Vào hồi 17 giờ, Thứ 5</h5>
+                        <h5 class="font-weight-normal text-muted ">Ngày 24 tháng 11 năm 2022</h5>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- Event End -->
+        <!-- Story Start -->
+        <!--  <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Story</h6>
+                <h1 class="font-secondary display-4">Our Love Story</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                
+                  <div class="row">
+                    <div class="col-md-6 text-center text-md-right" data-aos="fade-up-right">
+                            <img class="img-fluid  mr-md-3" src="img/story-7.jpg" alt="" style="margin-left: -15px !important;">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left" data-aos="fade-up-left">
+                            <img class="img-fluid  ml-md-3" src="img/story-8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                            <img class="img-fluid  mr-md-3" src="img/story-9.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                            <img class="img-fluid  ml-md-3" src="img/story-10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right" data-aos="fade-up-right">
+                        <img class="img-fluid  mr-md-3" src="img/story-1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left" data-aos="fade-up-left">
+                        <img class="img-fluid  ml-md-3" src="img/story-5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right"data-aos="fade-up-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                        <img class="img-fluid  mr-md-3" src="img/story-6.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left" data-aos="fade-up-left">
+                        <img class="img-fluid  ml-md-3" src="img/story-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+        <!-- Story End -->
+        <!-- Gallery Start -->
+        <!--  <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Gallery</h6>
+            <h1 class="font-secondary display-4 text-white">Our Photo Gallery</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
+                <a href="img/gallery-1.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
+                <a href="img/gallery-2.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
+                <a href="img/gallery-3.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
+                <a href="img/gallery-4.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
+                <a href="img/gallery-5.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
+                <a href="img/gallery-6.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+        </div>
+    </div> -->
+        <!-- Gallery End -->
+        <!-- Friends & Family Start -->
+        <!--  <div class="container-fluid py-5" id="family">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Friends & Family</h6>
+                <h1 class="font-secondary display-4">Groomsmen & Bridesmaid</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".first">Groomsmen</li>
+                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".second">Bridesmaid</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/groomsmen-1.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Full Name</h4>
+                            <p class="text-uppercase">Best Friend</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Full Name</h4>
+                            <p class="text-uppercase">Best Friend</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/groomsmen-2.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Full Name</h4>
+                            <p class="text-uppercase">Best Friend</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/bridesmaid-2.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Full Name</h4>
+                            <p class="text-uppercase">Best Friend</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/groomsmen-3.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Full Name</h4>
+                            <p class="text-uppercase">Best Friend</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/bridesmaid-3.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Full Name</h4>
+                            <p class="text-uppercase">Best Friend</p>
+                            <div class="d-inline-block">
+                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+        <!-- Friends & Family End -->
+        <!-- RSVP Start -->
+        <div class="container-fluid py-5" id="rsvp">
+            <div class="container py-5">
+                <div class="section-title position-relative text-center">
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Bản đồ</h6>
+                    <h1 class="font-secondary display-4">Tham gia bữa tiệc của chúng tôi</h1>
+                    <i class="far fa-heart text-dark"></i>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 ">
+                        <div class=" ">
+                            <!-- <img class="img-fluid mb-4" src="img/event-1.jpg" alt=""> -->
+                            <h4 class="mb-3 text-center">Nhà trai</h4>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6438685669204!2d106.04973467597232!3d21.16656648302991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135094e228b4e2d%3A0x4ea28acd06e05f2!2zTmjDoCBow6BuZyBTYW4gU2Fu!5e0!3m2!1svi!2s!4v1709180009802!5m2!1svi!2s"
+                                height="450" class="w-100" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="  ">
+                            <h4 class="mb-3 text-center">Nhà gái</h4>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.413250377967!2d106.05381837597236!3d21.175736482712825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31350eacf4388445%3A0x44d118171c8b268f!2zMzkgTmd1eeG7hW4gVsSDbiBD4burLCBQLk5pbmggWMOhLCBC4bqvYyBOaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1709180042123!5m2!1svi!2s"
+                                height="450" class="w-100" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- RSVP End -->
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+            <div class="container text-center py-5">
+                <div class="section-title position-relative text-center">
+                    <h1 class="font-secondary display-3 text-white">Thank You</h1>
+                    <i class="far fa-heart text-white"></i>
+                </div>
+                <div class="d-flex justify-content-center mb-4">
+                    <!-- <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2"
+                        href="https://www.facebook.com/hanguyenbo/"><i class="fab fa-facebook-f"></i></a>
+                    <!-- <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/ngtrha234/"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <div class="d-flex justify-content-center py-2">
+                    <p class="text-white" href="#">Email: nguyenha98.it@gmail.com</p>
+                    <!-- <span class="px-3">|</span> -->
+                </div>
+                <div class="d-flex justify-content-center py-2">
+                    <!-- <span class="px-3">|</span> -->
+                    <p class="text-white" href="#">Zalo: 0985902398</p>
+                </div>
+                <p class="m-0">&copy; <a class="text-primary" href="#">Domain Name</a>. Designed by <a
+                        class="text-primary" href="https://www.facebook.com/hanguyenbo/">Ha Nguyen</a>
+                </p>
+            </div>
+        </div>
+        <!-- Footer End -->
+        <!-- Scroll to Bottom -->
+        <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i
+                class="fa fa-angle-double-up"></i></a>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="/QuyLinh/lib/easing/easing.min.js"></script>
+        <script src="/QuyLinh/lib/waypoints/waypoints.min.js"></script>
+        <script src="/QuyLinh/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="/QuyLinh/lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="/QuyLinh/lib/lightbox/js/lightbox.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Template Javascript -->
+        <script src="/QuyLinh/js/main.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script type="text/javascript">
+            function myfunction() {
+                $('#preloader').fadeOut();
+                //             document.getElementById('myVideo').play();
+                var audio = new Audio('img/music.mp3');
+                audio.play();
+            }
+        </script>
+</body>
+
+</html>
