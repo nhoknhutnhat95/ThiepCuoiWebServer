@@ -69,6 +69,33 @@
 			justify-content: center;
 		}
 
+		@keyframes animationSnow {
+			0% {
+				transform: translate(0, 0);
+				opacity: 0;
+			}
+
+			50% {
+				opacity: 1;
+			}
+
+			100% {
+				opacity: 0;
+				transform: translate(100px, 50vh);
+			}
+		}
+
+		.snow {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50px;
+			height: 50px;
+			background-image: url('/QuyLinh/img/heart.png');
+			background-size: cover;
+			animation: animationSnow 4s ease-in-out infinite;
+		}
+
 		@media only screen and (max-width: 600px) {
 			#event-tc {
 				flex-direction: column;
@@ -83,17 +110,18 @@
 			#fh5co-gallery-list li:nth-child(6),
 			#fh5co-gallery-list li:nth-child(7),
 			#fh5co-gallery-list li:nth-child(8),
-			#fh5co-gallery-list li:nth-child(9){
+			#fh5co-gallery-list li:nth-child(9) {
 				display: none;
 			}
-			#fh5co-qr img{
+
+			#fh5co-qr img {
 				width: 350px;
 			}
 		}
 	</style>
 </head>
 
-<body data-target=".navbar">
+<body data-target=".navbar" id="body">
 	<div class="fh5co-loader"></div>
 	<div id="page">
 		<nav class="fh5co-nav" role="navigation">
@@ -170,6 +198,10 @@
 			enableUtc: false
 		});
 	</script> -->
+	<script src="/QuyLinh/lib/snow/snowfall.jquery.min.js"></script>
+	<script>
+		$(document).snowfall({ image: "/QuyLinh/img/heart.png", minSize: 10, maxSize: 32, flakeCount: 20, minSpeed: 3, maxSpeed: 5 });
+	</script>
 </body>
 
 </html>
