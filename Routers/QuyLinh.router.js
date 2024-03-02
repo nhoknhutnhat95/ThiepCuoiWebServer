@@ -5,5 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('QuyLinh/index')
 });
-
+router.get('/v2', function(req, res, next) {
+  res.render('QuyLinh/indexV2')
+});
 module.exports = router;
