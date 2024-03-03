@@ -8,6 +8,8 @@ app.use('/', express.static(path.join(__dirname, 'static')))
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('dev'))
+
+require('./dbs/init.mongodb')
 //Init router
 app.use('/', require('./Routers/index.router'))
 app.get('/dung-long-wedding', (req, res, next) => {
