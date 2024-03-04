@@ -2,12 +2,17 @@ const express = require('express');
 const path = require('path')
 const app = express();
 var morgan = require('morgan')
+const xss = require('xss-clean')
 
 //Init middlewares
 app.use('/', express.static(path.join(__dirname, 'static')))
 app.set('view engine', 'ejs');
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('dev'))
+app.use(xss())
+
 
 require('./dbs/init.mongodb')
 //Init router
