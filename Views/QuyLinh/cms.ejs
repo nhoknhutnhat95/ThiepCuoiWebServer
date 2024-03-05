@@ -18,6 +18,9 @@
                 <h3 class="text-uppercase"></h3>
             </div>
             <div class="col-auto">
+                <button class="btn btn-success" onclick="downloadExcel()">Xuất excel</button>
+            </div>
+            <div class="col-auto">
                 <select name="" id="sex" class="form-select">
                     <option value="male">Nhà trai</option>
                     <option value="female">Nhà gái</option>
@@ -70,6 +73,24 @@
                     </tr>`
         }
         $('table tbody').html(html)
+    }
+    function downloadExcel() {
+        const sex = $('#sex').val()
+        $.ajax({
+            url: '/quylinh/excel',
+            method: 'POST',
+            data: {
+                sex: sex
+            },
+            success: res => {
+                const a = document.createElement('a');
+                a.href = res.link;
+                a.download = 'data.xlsx';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
+        })
     }
 </script>
 

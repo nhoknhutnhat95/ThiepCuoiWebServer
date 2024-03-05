@@ -1,5 +1,7 @@
 var express = require('express');
 const { inviteSchema } = require('../models/invite.model');
+const XLSX = require('xlsx');
+const path = require('path');
 var router = express.Router();
 
 /* GET users listing. */
@@ -17,6 +19,26 @@ router.get('/invite', async function (req, res, next) {
     data: await inviteSchema.find({}).lean()
   })
 })
+router.post('/excel', async (req, res, next) => {
+  const { sex } = req.body
+  const data = await inviteSchema.find({ sex: sex })
+    .select('name phoneNumber').lean()
+  const dataShow = data.map(_ => {
+    return {
+      'Họ tên': _.name,
+      'Số điện thoại': _.phoneNumber
+    }
+  })
+  const wb = XLSX.utils.book_new();
+  const ws = XLSX.utils.json_to_sheet(dataShow)
+  XLSX.utils.book_append_sheet(wb, ws, 'Sheet 1')
+  const filePath = path.join(__dirname, '../', 'public', 'pdf', 'data.xlsx')
+  XLSX.writeFile(wb, filePath)
+  res.json({
+    link: '/pdf/data.xlsx'
+  })
+})
+
 router.post('/invite', async (req, res, next) => {
   try {
     const { name, phoneNumber, sex } = req.body
