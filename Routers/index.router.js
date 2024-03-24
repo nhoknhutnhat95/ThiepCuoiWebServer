@@ -6,5 +6,6 @@ router.get('/', (req, res, next) => {
 })
 
 router.use('/QuyLinh', require('./QuyLinh.router'))
+router.use('/DucPhuong', require('./DucPhuong.router'))
 
 module.exports = router;
